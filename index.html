@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Epilogue by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" >
+				<div class="inner">
+					<img id="ban" src="images/banner.jpg"></img>
+					<!-- <h1>WZPMC 2019</h1> -->
+					<!-- <p>hosted by LASUCOM</p> -->
+				</div>
+			</header>
+		<!-- Wrapper -->
+			<div id="wrapper">
+			<img src="/images/banner.jpg"></img>
+
+				<!-- Banner -->
+					<section id="intro" class="main">
+						
+						<li><span id="days"></span>days</li>
+						<li><span id="hours"></span>Hours</li>
+						<li><span id="minutes"></span>Minutes</li>
+						<li><span id="seconds"></span>Seconds</li>
+						<h2>Until WZPMC!!!!</h2>
+						<h5><a href="#">Click here to register</a></h5>
+						<style>
+							* {
+								box-sizing: border-box;
+								margin: 0;
+								padding: 0;
+							}						
+							.container {
+								color: #333;
+								text-align: center;
+							}
+						
+							h1 {
+								font-weight: normal;
+							}
+						
+							li {
+								display: inline-block;
+								font-size: 1.2em;
+								list-style-type: none;
+								padding: 1em;
+								text-transform: uppercase;
+							}
+						
+							li span {
+								display: block;
+								font-size: 4.5rem;
+							}
+						</style>
+						<script>
+							const second = 1000,
+								minute = second * 60,
+								hour = minute * 60,
+								day = hour * 24;
+
+							let countDown = new Date('May 4, 2019 00:00:00').getTime(),
+								x = setInterval(function () {
+
+									let now = new Date().getTime(),
+										distance = countDown - now;
+
+									document.getElementById('days').innerText = Math.floor(distance / (day)),
+										document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+										document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+										document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+									//do something later when date is reached
+									//if (distance < 0) {
+									//  clearInterval(x);
+									//  'IT'S MY BIRTHDAY!;
+									//}
+
+								}, second)
+						</script>
+					</section>
+
+					
+
+				<!-- Items -->
+					<section class="main items">
+						<article>
+							
+						</article>
+
+						<article id="map">
+							<header>
+								<!-- <a href="#"><img src="images/pic01.jpg" alt="" /></a> -->
+								<h3>Get directions</h3>
+							</header>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2903295282485!2d3.2462249143258166!3d6.610802395219388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9a7d5490f591%3A0xc3e6268eb2a535db!2sCity+Of+GOD+%2C+Anglican+Church.!5e0!3m2!1sen!2sng!4v1556209159833!5m2!1sen!2sng"
+								width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<!-- <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p> -->
+							<!-- <ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul> -->
+						</article>
+
+					</section>
+
+				<!-- CTA -->
+					<!-- <section id="cta" class="main special">
+						<h2>Etiam veroeros lorem</h2>
+						<p>Phasellus ac augue ac magna auctor tempus proin<br />
+						accumsan lacus a nibh commodo in pellentesque dui<br />
+						in hac habitasse platea dictumst.</p>
+						<ul class="actions">
+							<li><a href="#" class="button big">Get Started</a></li>
+						</ul>
+					</section> -->
+
+				<!-- Main -->
+				<!--
+					<section id="main" class="main">
+						<header>
+							<h2>Lorem ipsum dolor</h2>
+						</header>
+						<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</section>
+				-->
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<!-- <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p>site designed by <a href="">N_code</a></p>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
